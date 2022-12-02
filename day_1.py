@@ -20,5 +20,6 @@ def inventory_input():
 if __name__ == "__main__":
 	elf_inventories = inventory_input()
 	elf_inventories = [sum(inventory) for inventory in elf_inventories]
-	index_of_elf = elf_inventories.index(list(sorted(elf_inventories))[-1])
-	print(index_of_elf+1, elf_inventories[index_of_elf])
+	elf_inventories.sort()
+	print(f"Answer to Part 1: {elf_inventories[-1]}")
+	print(f"Answer to Part 2: {sum(elf_inventories[-3:])}")
