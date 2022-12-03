@@ -2,8 +2,6 @@
 
 # https://adventofcode.com/2022/day/2
 
-from pprint import pprint
-
 def strategy_guide_input():
 	strategies = list()
 	print("The Strategy guide:\nPlease enter empty line to finish input")
@@ -14,6 +12,7 @@ def strategy_guide_input():
 		else:
 			break
 	return list(filter(None, strategies))
+
 
 METRIC = {	
 	"X": 1, "A": 1, # Rock
